@@ -1,0 +1,1000 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Jost", "Courier New", Courier, monospace;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+#nav-placeholder {
+	margin-bottom: 50px;
+}
+
+#nav-placeholder>.header {
+	padding: 10px 30px;
+	/* padding-left: 30px; */
+}
+
+#nav-placeholder>.header {
+	padding: 0px;
+	padding-left: 30px;
+}
+
+.specilaloffers {
+	width: 100%;
+	margin: 80px 60px;
+	max-width: 1200px;
+}
+
+.specilaloffersheading {
+	font-size: 1.5em;
+}
+
+.specilaloffersitems {
+	display: flex;
+	width: 100%;
+	gap: 20px;
+	align-items: flex-start;
+}
+
+.newintownitems {
+	display: grid !important;
+	grid-template-columns: repeat(4, 1fr) !important;
+	gap: 20px !important;
+}
+
+
+.menu-banner {
+	/* border: 2px solid black; */
+	width: 95%;
+	height: auto;
+	margin: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-banner>.container1 {
+	display: flex;
+	flex-direction: row;
+	background-color: #191a1d;
+	background-image: url("https://cdn.evbstatic.com/s3-build/fe/build/images/3f96dddb80dd0a06eb9e5836cc641f33-generic_2_desktop.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.menu-banner>.container1>.containertext {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	padding: 80px;
+
+	/* Gradient opacity background */
+	background: linear-gradient(to right,
+			rgb(0, 0, 1),
+			rgba(0, 0, 0, 0.8),
+			rgba(0, 0, 0, 0.01));
+}
+
+.menu-banner>.container1>.containertext>h1 {
+	font-size: 3em;
+	padding: 40px 0px 20px 0px;
+}
+
+.menu-banner>.container1>.containertext>p {
+	padding: 20px 0px 20px 0px;
+}
+
+.menu-banner>.container1>.containertext>.seemenu {
+	padding: 12px 30px;
+	font-size: 1.5em;
+	font-weight: 900;
+	color: white;
+	background: none;
+	border: 2px solid whitesmoke;
+	border-radius: 40px;
+}
+
+.menu-banner>.container1>.containertext>.seemenu>a {
+	text-decoration: none;
+	color: #f4f4f4;
+}
+
+.menu-banner>.container1>.containertext>.offer {
+	padding: 12px 20px;
+	font-size: 1em;
+	font-weight: 900;
+	color: white;
+	background: #ff3939;
+	border: none;
+	border-radius: 12px;
+}
+
+.menu-banner>.container1>.containertext>.seemenu:hover {
+	background-color: #ff3939;
+	border: none;
+}
+
+.menu-banner>.container2 {
+	display: flex;
+	flex-direction: row;
+	background-color: #191a1d;
+	color: white;
+}
+
+.menu-banner>.container2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	background-color: #191a1d;
+	background-image: url("https://cdn.evbstatic.com/s3-build/fe/build/images/0ce18d7c82d043f3242149aabeae3a91-education.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.menu-banner>.container2>.containertext {
+	width: 50%;
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	padding: 80px;
+
+	background: linear-gradient(to left,
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 0.8),
+			rgba(0, 0, 0, 0.01));
+}
+
+.menu-banner>.container2>.containertext>h1 {
+	font-size: 3em;
+	padding: 40px 0px 20px 0px;
+}
+
+.menu-banner>.container2>.containertext>p {
+	padding: 20px 0px 20px 0px;
+}
+
+.menu-banner>.container2>.containertext>.seemenu {
+	padding: 12px 30px;
+	font-size: 1.5em;
+	font-weight: 900;
+	color: white;
+	background: none;
+	border: 2px solid whitesmoke;
+	border-radius: 40px;
+}
+
+.menu-banner>.container2>.containertext>.seemenu>a {
+	text-decoration: none;
+	color: #f4f4f4;
+}
+
+.menu-banner>.container2>.containertext>.offer {
+	padding: 12px 20px;
+	font-size: 1em;
+	font-weight: 900;
+	color: white;
+	background: #ff3939;
+	border: none;
+	border-radius: 12px;
+}
+
+.menu-banner>.container2>.containertext>.seemenu:hover {
+	background-color: #ff3939;
+	border: none;
+}
+
+.menu>.menuheading>h1 {
+	/* border: 2px solid red; */
+	width: 100%;
+	padding: 10px 50px;
+	font-size: 3em;
+}
+
+
+.reviews {
+	/* border: 4px solid black; */
+	width: 95%;
+	height: 120vh;
+	display: flex;
+	margin: 40px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.reviewsimg {
+	/* border: 2px solid red; */
+	width: 50%;
+	height: 120vh;
+}
+
+.reviewsimg>img {
+	width: 100%;
+	height: 100%;
+	border-radius: 40px;
+}
+
+.reviewstext {
+	/* border: 2px solid green; */
+	width: 50%;
+	height: 120vh;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	padding: 40px;
+}
+
+.reviewstext>h1 {
+	padding: 15px 0px;
+	font-size: 4em;
+}
+
+.reviewstext>h2 {
+	padding: 18px 0px;
+}
+
+.reviewstext>.client-no {
+	color: #ff3939;
+	font-weight: lighter;
+}
+
+.reviewstext>button {
+	padding: 10px 12px;
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	font-weight: 800;
+}
+
+/* =====================================================
+   🔁 EXTRA IMAGES – CIRCULAR SCROLL
+===================================================== */
+
+.extraimages {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin: 80px auto;
+}
+
+.extraimages-track {
+	display: flex;
+	width: max-content;
+	animation: scrollImages 30s linear infinite;
+}
+
+.extraimages-track img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	margin-right: 20px;
+	border-radius: 20px;
+	flex-shrink: 0;
+}
+
+/* PAUSE ON HOVER (nice UX) */
+.extraimages:hover .extraimages-track {
+	animation-play-state: paused;
+}
+
+/* KEYFRAMES */
+@keyframes scrollImages {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+/* =====================================================
+   ✨ GLOBAL ANIMATION UTILITIES
+===================================================== */
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideLeft {
+	from {
+		opacity: 0;
+		transform: translateX(60px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideRight {
+	from {
+		opacity: 0;
+		transform: translateX(-60px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* =====================================================
+   🎯 BANNER ANIMATION
+===================================================== */
+
+.menu-banner .container1,
+.menu-banner .container2 {
+	animation: fadeUp 1s ease both;
+}
+
+/* Slight delay for second banner */
+.menu-banner .container2 {
+	animation-delay: 0.3s;
+}
+
+/* =====================================================
+   🎯 SECTION HEADINGS
+===================================================== */
+
+.menuheading h1,
+.specilaloffersheading h1 {
+	position: relative;
+	animation: fadeUp 0.8s ease both;
+}
+
+.menuheading h1::after,
+.specilaloffersheading h1::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -8px;
+	width: 60px;
+	height: 4px;
+	background-color: #ff3939;
+	animation: fadeIn 1.2s ease both;
+}
+
+/* =====================================================
+   🎯 EVENT CARDS (SUBTLE)
+===================================================== */
+
+.event-card {
+	animation: fadeUp 0.7s ease both;
+}
+
+/* Stagger effect */
+.event-card:nth-child(1) {
+	animation-delay: 0.05s;
+}
+
+.event-card:nth-child(2) {
+	animation-delay: 0.1s;
+}
+
+.event-card:nth-child(3) {
+	animation-delay: 0.15s;
+}
+
+.event-card:nth-child(4) {
+	animation-delay: 0.2s;
+}
+
+/* =====================================================
+   🎯 REVIEWS SECTION
+===================================================== */
+
+.reviewsimg {
+	animation: slideRight 1s ease both;
+}
+
+.reviewstext {
+	animation: slideLeft 1s ease both;
+}
+
+/* =====================================================
+   🎯 CONTACT SECTION
+===================================================== */
+
+.contactus>div {
+	animation: fadeUp 0.9s ease both;
+}
+
+/* Stagger */
+.contactus>div:nth-child(1) {
+	animation-delay: 0.1s;
+}
+
+.contactus>div:nth-child(2) {
+	animation-delay: 0.25s;
+}
+
+.contactus>div:nth-child(3) {
+	animation-delay: 0.4s;
+}
+
+/* =====================================================
+   🎯 EXTRA IMAGES (already scrolling)
+===================================================== */
+
+.extraimages {
+	animation: fadeIn 1.2s ease both;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation: none !important;
+		transition: none !important;
+	}
+}
+
+
+.contactus {
+	/* border: 2px solid black; */
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	margin: 60px 0px;
+}
+
+.contactus>.contactustext {
+	/* border: 2px solid red; */
+	width: 30%;
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contactus>.contactustext>h1 {
+	padding: 20px;
+}
+
+.contactus>.contactustext>p {
+	padding: 20px 40px;
+}
+
+.contactus>.contactustext>p>img {
+	padding: 20px;
+}
+
+.contactus>.contactusdetails {
+	/* border: 2px solid red; */
+	width: 30%;
+	height: 60vh;
+}
+
+.contactus>.submitdetails {
+	/* border: 2px solid red; */
+	width: 30%;
+	height: 60vh;
+}
+
+.contactusdetails {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	padding-bottom: 80px;
+}
+
+.contactusdetails>h1 {
+	padding: 6px 20px;
+}
+
+.contactusdetails>p {
+	padding: 6px 20px;
+}
+
+.contactusdetails>p>.icon {
+	fill: #ff3939;
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+.submitdetails {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 80px;
+}
+
+.submitdetails>input {
+	padding: 15px 30px;
+	font-size: 16px !important;
+	color: #515050 !important;
+	background-color: #f4f4f4 !important;
+	font-weight: bolder;
+	border-radius: 40px;
+	border: none;
+}
+
+.submitdetails>button {
+	padding: 15px 80px;
+	background-color: #ff3939;
+	color: #f4f4f4;
+	font-size: 1.2em;
+	font-weight: bolder;
+	border-radius: 40px;
+	border: none;
+}
+
+.submitdetails>button:hover {
+	background-color: #000;
+}
+
+.submitdetails>h1,
+input,
+button {
+	margin: 8px 0px;
+}
+
+.menu-banner,
+.menu,
+.reviews,
+.extraimages,
+.contactus {
+	width: 100%;
+	margin: 40px auto;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+	.banner {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		padding: 60px 0;
+	}
+
+	.banner .content {
+		width: 90%;
+		margin-bottom: 0;
+	}
+
+	.banner .content img {
+		width: 50%;
+		height: auto;
+		margin-top: 20px;
+	}
+
+	.aboutus {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.aboutustext {
+		align-items: center;
+		text-align: center;
+	}
+
+	.aboutusimg {
+		width: 100%;
+	}
+
+	.specilaloffersitems {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.newintown {
+		width: 90%;
+	}
+
+	.menu-banner>.container1,
+	.menu-banner>.container2 {
+		flex-direction: column;
+	}
+
+	.menu-banner>.container1>.containerimg,
+	.menu-banner>.container2>.containerimg {
+		width: 100%;
+		height: auto;
+	}
+
+	.menu-banner>.container1>.containertext,
+	.menu-banner>.container2>.containertext {
+		width: 100%;
+		padding: 40px 20px;
+		text-align: center;
+		align-items: center;
+	}
+
+	.menu>.menuitems {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.menu>.menuitems>.burgersmenu {
+		width: 100%;
+	}
+
+	.menu>.menuitems>.burgersmenu>.card {
+		width: 90%;
+		margin: auto;
+	}
+
+	.reviews {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.reviewsimg,
+	.reviewstext {
+		width: 100%;
+		height: auto;
+	}
+
+	.reviewstext {
+		align-items: center;
+		text-align: center;
+	}
+
+	.extraimages {
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+
+	.extraimages img {
+		width: 80%;
+		padding: 20px 0;
+	}
+
+	.contactus {
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+
+	.contactus>.contactustext,
+	.contactus>.contactusdetails,
+	.contactus>.submitdetails {
+		width: 90%;
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.submitdetails>input,
+	.submitdetails>button {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.banner .content h2 {
+		font-size: 2em;
+	}
+
+	.banner .content .burger {
+		font-size: 4em;
+	}
+
+	.aboutustext>h1 {
+		font-size: 2em;
+	}
+
+	.menu-banner>.container1>.containertext>h1,
+	.menu-banner>.container2>.containertext>h1 {
+		font-size: 2em;
+	}
+
+	.reviewstext>h1 {
+		font-size: 2.5em;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.specilaloffersitems {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.newintown {
+		order: 1;
+		width: 90%;
+	}
+
+	.newintownitems {
+		order: 2;
+		width: 90%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		justify-items: center;
+	}
+
+	.newintownitems .card {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.newintownitems {
+		grid-template-columns: 1fr;
+	}
+}
+
+.search-results {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	width: 100%;
+	max-width: 1200px;
+	margin: 60px auto;
+	padding: 0 20px;
+}
+
+.search-results .card {
+	background-color: #fbf8f6;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 12px;
+	box-sizing: border-box;
+	width: 350px;
+	max-width: 100%;
+	flex: 0 0 auto;
+}
+
+.search-results .card>img {
+	width: 100%;
+	height: 220px;
+	object-fit: contain;
+}
+
+.search-results .card h5 {
+	color: black;
+}
+
+.search-results .card p {
+	font-size: 0.9rem;
+	color: #555;
+	line-height: 1.4;
+	margin-bottom: 20px;
+	text-align: left;
+	padding: 6px;
+}
+
+.search-results .card .card-footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.search-results .price-btn {
+	background-color: #ff4b4b;
+	color: white;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: none;
+	font-size: 0.9rem;
+	cursor: pointer;
+}
+
+.search-results .add-cartbtn {
+	font-size: 1.2rem;
+	font-weight: 600;
+	border: none;
+	background-color: transparent;
+	color: black;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	cursor: pointer;
+	transition: color 0.3s ease;
+}
+
+.search-results .add-cartbtn:hover {
+	color: #ff3c2a;
+}
+
+@media (max-width: 1024px) {
+	.search-results {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* Mobile → 1 card */
+@media (max-width: 600px) {
+	.search-results {
+		grid-template-columns: 1fr;
+	}
+}
+
+
+.card,
+.event-card {
+	height: 420px !important;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: space-between !important;
+
+	border-radius: 20px !important;
+	overflow: hidden !important;
+	background-color: #fbf8f6 !important;
+
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12) !important;
+	transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card:hover,
+.event-card:hover {
+	transform: translateY(-6px) !important;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18) !important;
+}
+
+.card img,
+.event-card img {
+	width: 100% !important;
+	height: 200px !important;
+	object-fit: contain;
+	background-color: #eee;
+}
+
+
+.card h5,
+.event-card h5 {
+	padding: 10px !important;
+	height: 60px !important;
+	overflow: hidden !important;
+	font-size: 1rem !important;
+	font-weight: 600 !important;
+}
+
+/* DESCRIPTION */
+.card p,
+.event-card p {
+	padding: 0 10px !important;
+	height: 40px !important;
+	overflow: hidden !important;
+	font-size: 0.9rem !important;
+	color: #555 !important;
+}
+
+/* FOOTER */
+.card .card-footer,
+.event-card .card-footer {
+	display: flex !important;
+	justify-content: space-between !important;
+	align-items: center !important;
+	padding: 10px !important;
+}
+
+/* PRICE BUTTON */
+.price-btn {
+	background-color: #ff4b4b !important;
+	color: #fff !important;
+	padding: 6px 16px !important;
+	border-radius: 20px !important;
+	border: none !important;
+	font-weight: bold !important;
+	font-size: 0.9rem !important;
+}
+
+/* REGISTER BUTTON */
+.add-cartbtn {
+	border: none !important;
+	background: none !important;
+	font-weight: 600 !important;
+	cursor: pointer !important;
+	display: flex !important;
+	align-items: center !important;
+	gap: 6px !important;
+}
+
+.add-cartbtn:hover {
+	color: #ff3939 !important;
+}
+
+
+.menuitems,
+.search-results {
+	display: grid !important;
+	grid-template-columns: repeat(4, 1fr) !important;
+	gap: 20px !important;
+	padding-left: 50px;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+	.newintownitems,
+	.menuitems,
+	.search-results {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+	.newintownitems,
+	.menuitems,
+	.search-results {
+		grid-template-columns: 1fr !important;
+	}
+}
+
+/* =====================================================
+   🎯 SCROLL-TRIGGER BASE STATE
+===================================================== */
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Activated when visible */
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Specific animations */
+.fade-up.is-visible {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-in.is-visible {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.slide-left.is-visible {
+  animation: slideLeft 0.9s ease forwards;
+}
+
+.slide-right.is-visible {
+  animation: slideRight 0.9s ease forwards;
+}

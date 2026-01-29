@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Admin</title>
+	<link rel="stylesheet" href="./Styles/admin.css" />
+</head>
+
+<body>
+	<div id="nav-placeholder"></div>
+
+	<!-- ================= CREATE EVENT FORM ================= -->
+	<form id="eventForm">
+		<h2>Create Event</h2>
+
+		<label>Event Name</label>
+		<input type="text" id="eventName" required />
+
+		<!-- MODE -->
+		<label>Event Mode</label>
+		<select id="mode" required>
+			<option value="" disabled selected>Select mode</option>
+			<option value="ONLINE">Online</option>
+			<option value="OFFLINE">Offline</option>
+		</select>
+
+		<!-- LOCATION (ONLY FOR OFFLINE) -->
+		<div id="locationWrapper">
+			<label>Location</label>
+			<input type="text" id="eventLocation" placeholder="Enter event location" />
+		</div>
+
+		<label>Date</label>
+		<input type="date" id="eventDate" required />
+
+		<label>Time</label>
+		<input type="time" id="eventTime" required />
+
+		<label>Price</label>
+		<input type="text" id="price" placeholder="Enter price" required />
+
+		<label>Category</label>
+		<select id="category" required>
+			<option value="" disabled selected>Select category</option>
+			<option value="education">Education</option>
+			<option value="music">Music</option>
+			<option value="sports">Sports</option>
+			<option value="technology">Technology</option>
+		</select>
+
+		<label>Event Image URL</label>
+		<input type="text" id="image" placeholder="Enter image URL" required />
+
+		<!-- DISPLAY CONTROL -->
+		<label>Display Page</label>
+		<select id="displayPage" required>
+			<option value="EVENTS">Events Page</option>
+			<option value="HOME">Home Page</option>
+		</select>
+
+		<label>Home Section</label>
+		<select id="displaySection">
+			<option value="SPECIAL">Special Events</option>
+			<option value="EDUCATION">Educational Events</option>
+			<option value="MUSIC">Music</option>
+			<option value="SPORTS">Sports</option>
+			<option value="TECHNOLOGY">Technology</option>
+		</select>
+
+		<!-- SLOTS -->
+		<label>Total Slots</label>
+		<input type="number" id="totalSlots" min="1" placeholder="Enter total slots" required />
+
+		<button type="submit">Submit Event</button>
+	</form>
+
+	<!-- ================= EVENTS TABLE ================= -->
+	<h2 style="text-align: center; margin-top: 40px">All Events</h2>
+
+	<table id="events-table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Mode</th>
+				<th>Location</th>
+				<th>Date</th>
+				<th>Time</th>
+				<th>Slots</th>
+				<th>Page</th>
+				<th>Section</th>
+				<th>Options</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+
+
+
+	<script src="./JavaScript/api.js"></script>
+
+	<script>
+		const token = localStorage.getItem("token");
+		const role = localStorage.getItem("role");
+
+		if (!token || role !== "ADMIN") {
+			window.location.href = "login.html";
+		}
+	</script>
+
+	<script src="./JavaScript/navbar.js"></script>
+
+	<script>
+		fetch("/navbar.html")
+			.then(res => res.text())
+			.then(html => {
+				document.getElementById("nav-placeholder").innerHTML = html;
+				initNavbar();
+				initNavbarAuth();
+			});
+	</script>
+
+	<script src="./JavaScript/api.js"></script>
+	<script src="./JavaScript/authGuard.js"></script>
+
+	<script>
+		if (!requireAdmin()) {
+			throw new Error("Admins only");
+		}
+	</script>
+
+	<script src="./JavaScript/admin.js"></script>
+
+</body>
+
+</html>

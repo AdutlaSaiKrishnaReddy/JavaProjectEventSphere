@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>EventSphere
+		
+		
+	</title>
+	<link rel="stylesheet" href="./Styles/index.css" />
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<div id="nav-placeholder"></div>
+
+	<!-- SEARCH RESULTS -->
+	<div id="searchResults" class="search-results"></div>
+
+	<!-- PAGE CONTENT -->
+	<div id="pageContent">
+
+		<!-- ================= SPECIAL EVENTS ================= -->
+		<div class="specilaloffers animate-on-scroll fade-up">
+			<div class="specilaloffersheading">
+				<h1>Special Events</h1>
+			</div>
+
+			<div class="specilaloffersitems">
+				<!-- 🔥 Dynamic cards will be injected here -->
+				<div class="newintownitems" id="special-events"></div>
+			</div>
+		</div>
+
+		<!-- ================= BANNERS ================= -->
+		<div class="menu-banner fade-up animate-on-scroll" id="menuOffers">
+			<div class="container1">
+				<div class="containertext">
+					<button class="offer">-25% OFF</button>
+					<h1>Enjoy your favourite events with us</h1>
+					<p>Dont miss out your favourite events</p>
+					<button class="seemenu">
+						<a href="./events.html">Check Events</a>
+					</button>
+				</div>
+			</div>
+
+			<div class="container2">
+				<div class="containertext">
+					<button class="offer">-15% OFF</button>
+					<h1>Education events you can attend</h1>
+					<p>Dont miss out your favourite events</p>
+					<button class="seemenu">
+						<a href="./events.html">Check Events</a>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- ================= EDUCATIONAL EVENTS ================= -->
+		<div class="menu animate-on-scroll fade-up">
+			<div class="menuheading">
+				<h1>Educational Events</h1>
+			</div>
+
+			<!-- 🔥 Dynamic cards will be injected here -->
+			<div class="menuitems" id="education-events"></div>
+		</div>
+		
+		<!-- ================= SPORTS EVENTS ================= -->
+		<div class="menu animate-on-scroll fade-up">
+		  <div class="menuheading">
+		    <h1>Sports Events</h1>
+		  </div>
+		  <div class="menuitems" id="sports-events"></div>
+		</div>
+
+		<!-- ================= FINANCE EVENTS ================= -->
+		<div class="menu animate-on-scroll fade-up">
+		  <div class="menuheading">
+		    <h1>Finance Events</h1>
+		  </div>
+		  <div class="menuitems" id="finance-events"></div>
+		</div>
+
+		<!-- ================= TECHNOLOGY EVENTS ================= -->
+		<div class="menu animate-on-scroll fade-up">
+		  <div class="menuheading">
+		    <h1>Technology Events</h1>
+		  </div>
+		  <div class="menuitems" id="technology-events"></div>
+		</div>
+
+		<!-- ================= MUSIC EVENTS ================= -->
+		<div class="menu animate-on-scroll fade-up">
+		  <div class="menuheading">
+		    <h1>Music Events</h1>
+		  </div>
+		  <div class="menuitems" id="music-events"></div>
+		</div>
+
+
+		<!-- ================= REVIEWS ================= -->
+		<div class="reviews animate-on-scroll">
+			<div class="reviewsimg slide-right animate-on-scroll">
+				<img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/nate-johnston-ozHMc88WgcI-unsplash.jpg"
+					alt="" />
+			</div>
+			 <div class="reviewstext slide-left animate-on-scroll">
+				<button>Testimonials</button>
+				<h1>What our clients have to say</h1>
+				<h1 class="client-no">99</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<h2>- John Doe</h2>
+			</div>
+		</div>
+
+		<!-- ================= GALLERY ================= -->
+		<div class="extraimages animate-on-scroll fade-in">
+		  <div class="extraimages-track">
+		    <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2" />
+		    <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=800&q=80" />
+		    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30" />
+		    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063" />
+
+		    <!-- 🔁 duplicate for infinite loop -->
+		    <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2" />
+		    <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=800&q=80" />
+		    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30" />
+		    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063" />
+		  </div>
+		</div>
+
+		<!-- ================= CONTACT ================= -->
+	<div class="contactus animate-on-scroll fade-up" id="contact">
+			<div class="contactustext">
+				<h1>EventSphere</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>
+
+			<div class="contactusdetails">
+				<h1>Contact us</h1>
+				<p>📍 VR colony, Kurnool</p>
+				<p>📞 +569 2698 0256</p>
+				<p>✉️ email@companyname.com</p>
+			</div>
+
+			<div class="submitdetails">
+				<h1>Subscribe</h1>
+				<input type="email" placeholder="Enter your email" />
+				<button>SUBSCRIBE</button>
+				<p>Get the latest special offers</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="./JavaScript/api.js"></script>
+	<script src="./JavaScript/navbar.js"></script>
+	<script src="./JavaScript/search.js"></script>
+	<script src="./JavaScript/index.js"></script>
+
+</body>
+
+</html>

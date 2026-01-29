@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./Styles/baseLogin.css" />
+    <link rel="stylesheet" href="./Styles/signup.css" />
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="form-container sign-up"
+        style="position: relative; width: 100%; opacity: 1; z-index: 5"
+      >
+        <form id="signupForm">
+          <h1>Create Account</h1>
+
+          <div class="social-icons">
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+
+          <span>or use your email for registration</span>
+
+          <div class="userType">
+            <label>Account Type</label>
+            <select id="role">
+              <option value="user">User</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+
+          <input type="text" id="signupName" placeholder="Name" />
+          <input type="email" id="signupEmail" placeholder="Email" />
+
+          <div class="password-wrapper">
+            <input type="password" id="signupPassword" placeholder="Password" />
+
+            <div class="password-rules" id="passwordRules">
+              <p id="length">
+                <i class="fa-solid fa-circle-xmark"></i> Minimum 8 characters
+              </p>
+              <p id="uppercase">
+                <i class="fa-solid fa-circle-xmark"></i> At least 1 uppercase
+                letter
+              </p>
+              <p id="lowercase">
+                <i class="fa-solid fa-circle-xmark"></i> At least 1 lowercase
+                letter
+              </p>
+              <p id="number">
+                <i class="fa-solid fa-circle-xmark"></i> At least 1 number
+              </p>
+              <p id="special">
+                <i class="fa-solid fa-circle-xmark"></i> At least 1 special
+                character
+              </p>
+            </div>
+          </div>
+
+          <button type="submit">Sign Up</button>
+          <a href="login.html">Already have an account? Sign In</a>
+        </form>
+      </div>
+    </div>
+
+    <script src="./JavaScript/signup.js"></script>
+  </body>
+</html>
